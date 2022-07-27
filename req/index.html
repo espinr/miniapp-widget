@@ -316,7 +316,7 @@
           <span its-locale-filter-list="zh-hans" lang="zh-hans">Manifest 文件</span>
         </h2>
         <p its-locale-filter-list="en" lang="en">
-          The configuration file must be included in the MiniApp Widget package. Developers can set the basic information, style, and routing of the Widget through the Manifest file. The format of the Widget Manifest file should be          consistent with that of the <a href="https://www.w3.org/TR/miniapp-manifest/">MiniApp Manifest file</a>. Specifically, there will be some changes in the Widget environment.
+          The configuration file must be included in the MiniApp Widget package. Developers can set the basic information, style, and routing of the Widget through the Manifest file. The format of the Widget Manifest file should be          consistent with that of the <a href="https://www.w3.org/TR/miniapp-manifest/">MiniApp Manifest</a> [[MINIAPP-MANIFEST]]. Specifically, there will be some changes in the Widget environment.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           MiniApp Widget 包中需要包含配置文件，开发者可通过 Manifest 文件设置 Widget 的基本信息、样式和路由等信息。Widget 的 Manifest 文件应当与 <a href="https://www.w3.org/TR/miniapp-manifest/">MiniApp Manifest 文件</a>的格式保持一致。特定地，在 Widget 环境中，会有一些变化：
@@ -327,15 +327,15 @@
           <span its-locale-filter-list="zh-hans" lang="zh-hans">Widget 描述</span>
         </b>
         <p its-locale-filter-list="en" lang="en">
-          The Manifest file should include a <code>widgets</code> property (similar to the <a href="https://www.w3.org/TR/miniapp-manifest/#pages-member">pages</a> property), used for designating relevant information and configuration of widget contained in MiniApp, and should include the following:
+          The Manifest document MAY include a <a href="https://www.w3.org/TR/miniapp-manifest/#dfn-widgets" data-link-type="dfn"><code>widgets</code></a> member (similar to the <a href="https://www.w3.org/TR/miniapp-manifest/#dfn-pages" data-link-type="dfn"><code>pages</code></a> member), used for designating relevant information and configuration of widget contained in MiniApp, and should include the following:
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
-          Manifest 文件中需要包含 <code>widgets</code> 字段（类似于 <a href="https://www.w3.org/TR/miniapp-manifest/#pages-member">pages</a> 字段），用于指定 MiniApp 中包含的 widget 的相关信息和配置，应当包含以下：
+          Manifest 文件中需要包含 <a href="https://www.w3.org/TR/miniapp-manifest/#dfn-widgets" data-link-type="dfn"><code>widgets</code></a> 字段（类似于 <a href="https://www.w3.org/TR/miniapp-manifest/#dfn-pages" data-link-type="dfn">pages</a> 字段），用于指定 MiniApp 中包含的 widget 的相关信息和配置，应当包含以下：
         </p>
         <ol>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              Name of the MiniApp Widget
+              Name of the MiniApp Widget;
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               MiniApp Widget 的名字
@@ -343,7 +343,7 @@
           </li>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              File path of the MiniApp Widget – used for locating the file where the MiniApp Widget is located
+              File path of the MiniApp Widget – used for locating the file where the MiniApp Widget is located;
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               MiniApp Widget 的文件路径，用于定位 MiniApp Widget 所在的文件
@@ -351,7 +351,7 @@
           </li>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              Minimum platform version. Different minimum platform version declarations may exist as there may be differences between the Widget API and MiniApp API. As the Widget is loaded independently, the minimum platform version declaration can be directed for a single widget
+              Minimum platform version. Different minimum platform version declarations may exist as there may be differences between the Widget API and MiniApp API. As the Widget is loaded independently, the minimum platform version declaration can be directed for a single widget;
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               最小平台版本，因为 Widget 涉及的 API 与 MiniApp API 有一定差别，可能会存在不同的最小平台版本声明。且因为 Widget 是独立加载的，最小平台版本声明可以针对单个 widget 声明
@@ -360,11 +360,11 @@
         </ol>
 
         <b>
-          <span its-locale-filter-list="en" lang="en">Field changes in Manifest file</span>
+          <span its-locale-filter-list="en" lang="en">Changes in Manifest</span>
           <span its-locale-filter-list="zh-hans" lang="zh-hans">Manifest 文件字段变化</span>
         </b>
         <p its-locale-filter-list="en" lang="en">
-          Due to some features of the widget, some configuration information in the Manifest file will not take effect in widgets. For example, the <code>fullScreen</code> property of <code>window</code> describes whether the MiniApp Page is displayed in fullscreen, however, as the widget has no fullscreen mode, this property will be ignored.
+          Due to some widget's features, some configuration information in the <a href="https://www.w3.org/TR/miniapp-manifest/">Manifest</a> will not take effect in widgets. For example, the <code>window</code>'s <a href="https://www.w3.org/TR/miniapp-manifest/#dfn-fullscreen" data-link-type="dfn"><code>fullScreen</code></a> member describes whether the MiniApp Page is displayed in fullscreen. However, this property will be ignored as the widget has no fullscreen mode.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           因为 widget 的一些特点，Manifest 文件中的一些配置信息，在 Widget 中不会生效。例如 <code>window</code> 的 <code>fullScreen</code> 属性，描述了 MiniApp 页面是否以全屏形式显示，由于 widget 并没有对应的形式，因此会忽略这个信息。
@@ -382,7 +382,7 @@
         <ol>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              In case of changes in system language, window size, color scheme etc., the Widget needs to receive the changed information to change the interface.
+              In case of changes in system language, window size, color scheme, etc., the Widget needs to receive the changed information to change the interface.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               当系统语言/窗口大小/Darkmode 等发生变化时，Widget 需要接收到变化后的信息，以改变界面。
