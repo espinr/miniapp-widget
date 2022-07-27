@@ -121,7 +121,7 @@
       <ol>
         <li>
           <p its-locale-filter-list="en" lang="en">
-          In order to quickly check information, users can add favorite MiniApp Widgets in the Widget list of the system, such as weather, calendar, route, etc. When users need further operations, they can click the button on the MiniApp Widget to open the MiniApp Page.
+          In order to quickly check information, users can add favorite MiniApp Widgets in the Widget list of the system, such as weather, calendar, route, etc. When users need further operations, they can click the button on the MiniApp Widget to open the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Page</a>.
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans">
             在系统的Widget列表中，用户可以添加喜欢的 MiniApp Widget，例如天气、日历、行程等，快速查看信息。用户需要更进一步操作时，可以点击MiniApp Widget上的按钮，打开MiniApp页面。
@@ -129,7 +129,7 @@
         </li>
         <li>
           <p its-locale-filter-list="en" lang="en">
-          When a user uses a MiniApp for video or photos, a product is shown and automatically recognized. Then, the user clicks on the product, opening an e-commerce MiniApp Widget, displayed as a floating window, presenting some basic information about the product. Users can click the details button on the Widget to jump to the e-commerce MiniApp Page to purchase.
+          When a user uses a MiniApp for video or photos, a product is shown and automatically recognized. Then, the user clicks on the product, opening an e-commerce MiniApp Widget, displayed as a floating window, presenting some basic information about the product. Users can click the details button on the Widget to jump to the e-commerce <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Page</a> to purchase.
           </p>
           <p its-locale-filter-list="zh-hans" lang="zh-hans" class="retranslateme">
             用户在浏览视频或者图片类 MiniApp 时，自动识别内容中的商品。当用户点击这个商品时，打开电商 MiniApp 相关的 MiniApp Widget。这个 Widget 可以浮窗形式出现，呈现商品的一些基本信息。用户可以点击Widget上的详情按钮，跳转到电商MiniApp的页面来购买。
@@ -191,7 +191,7 @@
           </li>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              The form of resources that the MiniApp Widget accesses in the package is consistent with a MiniApp page. Therefore, the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a> should be able to access the resource files in the MiniApp package in the same way.
+              The form of resources that the MiniApp Widget accesses in the package is consistent with a <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Page</a>. Therefore, the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a> should be able to access the resource files in the MiniApp package in the same way.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               MiniApp Widget 访问到包中的资源形式与 MiniApp 页面保持一致。因此，<a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a> 应能以同样的方式访问 MiniApp 包中的资源文件。
@@ -264,7 +264,7 @@
           </li>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              The <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a> can locate and load the MiniApp Widget using the same mechanism as the MiniApp Page.
+              The <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a> can locate and load the MiniApp Widget using the same mechanism as the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Page</a>.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">User agent</a> 能以与 MiniApp 页面相同的机制定位并加载 MiniApp Widget。
@@ -294,7 +294,7 @@
         <ol>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              A MiniApp package may contain both the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Pages</a> and Widgets. In some cases, MiniApp expects to display a Widget on the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a>. However, when the user clicks the content on the Widget, a MiniApp Page is provided as the landing page with richer content.
+              A MiniApp package may contain both the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Pages</a> and Widgets. In some cases, MiniApp expects to display a Widget on the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a>. However, when the user clicks the content on the Widget, a <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Page</a> is provided as the landing page with richer content.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               一个 MiniApp 包中应该可以同时包含 <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp 页面</a>和 Widget。在某些情况下，MiniApp 希望能在 user agent 上 显示一个 Widget，并在用户点击Widget上的内容时，提供 MiniApp 页面作为承载更丰富内容的落地页。
@@ -364,7 +364,7 @@
           <span its-locale-filter-list="zh-hans" lang="zh-hans">Manifest 文件字段变化</span>
         </b>
         <p its-locale-filter-list="en" lang="en">
-          Due to some widget's features, some configuration information in the <a href="https://www.w3.org/TR/miniapp-manifest/">Manifest</a> will not take effect in widgets. For example, the <code>window</code>'s <a href="https://www.w3.org/TR/miniapp-manifest/#dfn-fullscreen" data-link-type="dfn"><code>fullScreen</code></a> member describes whether the MiniApp Page is displayed in fullscreen. However, this property will be ignored as the widget has no fullscreen mode.
+          Due to some widget's features, some configuration information in the <a href="https://www.w3.org/TR/miniapp-manifest/">Manifest</a> will not take effect in widgets. For example, the <code>window</code>'s <a href="https://www.w3.org/TR/miniapp-manifest/#dfn-fullscreen" data-link-type="dfn"><code>fullScreen</code></a> member describes whether the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Page</a> is displayed in fullscreen. However, this property will be ignored as the widget has no fullscreen mode.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           因为 widget 的一些特点，Manifest 文件中的一些配置信息，在 Widget 中不会生效。例如 <code>window</code> 的 <code>fullScreen</code> 属性，描述了 MiniApp 页面是否以全屏形式显示，由于 widget 并没有对应的形式，因此会忽略这个信息。
@@ -408,7 +408,7 @@
           开发者在 MiniApp Widget 中可以使用的API 应当与 <b><i>[MiniApp API 规范]</i></b> 尽量保持一致，但有一些 API 需要针对 MiniApp Widget 场景进行调整，本节内容应根据 <b><i>[MiniApp API 规范]</i></b> 内容调整。
         </p>
         <p its-locale-filter-list="en" lang="en">
-          Some APIs that could be used on MiniApp Page need to be adjusted to the Widget scenarios, such as:
+          Some APIs that could be used on <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Page</a> need to be adjusted to the Widget scenarios, such as:
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           在 Widget 场景下，一些原先在 MiniApp 页面上可以使用的 API 需要调整，例如：
