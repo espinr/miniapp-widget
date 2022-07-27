@@ -148,7 +148,7 @@
 
     <section>
       <h2>
-        <span its-locale-filter-list="en" lang="en">Requirement</span>
+        <span its-locale-filter-list="en" lang="en">Requirements</span>
         <span its-locale-filter-list="zh-hans" lang="zh-hans">需求</span>
       </h2>
       
@@ -158,7 +158,7 @@
           <span its-locale-filter-list="zh-hans" lang="zh-hans">宿主环境</span>
         </h2>
         <p its-locale-filter-list="en" lang="en">
-          The MiniApp Widget runs in a host environment that is called the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a>. The MiniApp Widget user agent is largely the same as the MiniApp user agent, and shall meet the following requirements:
+          The MiniApp Widget runs in a host environment called <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a>. The MiniApp Widget user agent is essentially the same as the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">MiniApp user agent</a>, and shall meet the following requirements:
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           MiniApp Widget 需要在一个宿主环境中运行，这个环境被称为 <a data-link-type="dfn"  href="https://www.w3.org/TR/miniapp-packaging/#dfn-useragent">user agent</a>。MiniApp Widget 的 user agent 在较大程度下与 MiniApp 的 user agent 保持一致，应该满足如下一些需求：
@@ -199,7 +199,7 @@
           </li>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              When running the widget, the user agent should be able to provide necessary interface support. Some specific requirements related to the Widget are described in the MiniApp API section of this document.
+              When running the Widget, the user agent should be able to provide necessary interface support. Some specific requirements related to the Widget are described in the MiniApp API section of this document.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               在运行过程中，user agent 应能提供必要的接口支持，在本文档的 MiniApp API 一节中描述与 Widget 相关的特定需求。
@@ -207,7 +207,7 @@
           </li>
         </ol>
         <p its-locale-filter-list="en" lang="en">
-          Specifically, in the MiniApp Widget scenario, as the Widget itself does not occupy the complete screen space, the user agent will have some specific requirements:
+          Specifically, in the MiniApp Widget scenario, as the Widget itself does not occupy the entire screen, the user agent will have some specific requirements:
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           特定地，在 MiniApp Widget 场景下，由于 Widget 本身并不占据完整的屏幕空间，user agent 也会有一些特定的需求：
@@ -215,26 +215,26 @@
         <ol>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              The user agent can integrate the MiniApp Widget with its own interface, to achieve a better integration experience.
+              The user agent can integrate the MiniApp Widget with its own interface to achieve a better integration experience.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               User agent 可以将 MiniApp Widget 与自身界面结合在一起显示，以达到更好的融合体验。
             </p>
           </li>
           <li>
-            <p its-locale-filter-list="en" lang="en">To better integrate the MiniApp Widget and the user agent interface, the user agent should provide its style information to the MiniApp Widget, so as to better support the requirements such as dark mode.</p>
+            <p its-locale-filter-list="en" lang="en">To better integrate the MiniApp Widget and the user agent interface, the user agent should provide its style information to the MiniApp Widget so as to better support the requirements such as dark mode.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               为了更好地将 MiniApp Widget 与 user agent 的界面融合，user agent 应当为 MiniApp Widget 提供自身样式的信息，以更好的支持诸如深色模式等需求。
             </p>
           </li>
           <li>
-            <p its-locale-filter-list="en" lang="en">The user agent should be able to load and display multiple MiniApp Widgets concurrently, for example, display a relevant air ticket Widget and taxi Widget simultaneously on Intelligent Assistant.
+            <p its-locale-filter-list="en" lang="en">The user agent should be able to load and display multiple MiniApp Widgets concurrently, for example, display a relevant air ticket Widget and taxi Widget simultaneously on the device intelligent assistant.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">User agent 可以同时加载并显示多个 MiniApp Widget，例如在智能助理中同时显示相关的机票 Widget 和打车 Widget。
             </p>
           </li>
           <li>
-            <p its-locale-filter-list="en" lang="en">Some behaviors of the User agent may cause the Widget to show or hide, and in such a case, the lifecycle callback of the Widget should be triggered correctly.
+            <p its-locale-filter-list="en" lang="en">Some user agent behaviors may cause the Widget to show and hide. In such a case, the lifecycle callback of the Widget should be triggered correctly.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               User agent 的一些行为可能会导致 Widget 的展现和消失，此时应该正确触发 Widget 的生命周期回调。
