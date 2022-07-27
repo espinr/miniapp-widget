@@ -402,13 +402,13 @@
       <section id="api">
         <h2>MiniApp API</h2>
         <p its-locale-filter-list="en" lang="en">
-          The API that developers can use in the MiniApp Widget should be consistent with the <b><i>[MiniApp API specification]</i></b> as much as possible, however, some APIs need to be adjusted for specific MiniApp Widget scenarios. The content in this section should be adjusted based on the <b><i>[MiniApp API specification]</i></b>.
+          The API developers can use in the MiniApp Widget should be as consistent with the <mark>[MiniApp API specification]</mark> as possible. However, some APIs MAY need to be adjusted for specific MiniApp Widget scenarios. The content in this section should be adjusted based on the <mark>[MiniApp API specification]</mark>.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           开发者在 MiniApp Widget 中可以使用的API 应当与 <b><i>[MiniApp API 规范]</i></b> 尽量保持一致，但有一些 API 需要针对 MiniApp Widget 场景进行调整，本节内容应根据 <b><i>[MiniApp API 规范]</i></b> 内容调整。
         </p>
         <p its-locale-filter-list="en" lang="en">
-          Some APIs that could be used on MiniApp Page need to be adjusted in Widget scenario, such as:
+          Some APIs that could be used on MiniApp Page need to be adjusted to the Widget scenarios, such as:
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           在 Widget 场景下，一些原先在 MiniApp 页面上可以使用的 API 需要调整，例如：
@@ -416,7 +416,7 @@
         <ol>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              API with background persistence or API passively triggered, e.g. background location and push. As the Widget runs in the user agent, it does not exist as an independent unit in terms of user perception, and these APIs are prone to cause user confusion between calling the Widget and the user agent.
+              API with background persistence or API passively triggered, e.g., background location and push notifications. As the Widget runs in the user agent, it does not exist as an independent unit in terms of user perception, and these APIs are prone to cause user confusion between calling the Widget and the user agent.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               具备后台持续能力或者被动触发的 API，例如持续定位和推送，因为 Widget 在 user agent 环境中运行，在用户认知上并不作为独立运行的单元存在，这些 API 易造成用户将 Widget 的调用与 user agent 混淆。
@@ -424,7 +424,7 @@
           </li>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              API that can capture user attention and cause misunderstanding by the user, e.g. launching the camera interface. As multiple Widgets may be displayed on the same interface, if these Widgets directly call the API to open the interface concurrently, it will cause the user to misunderstand.
+              API that can capture user attention and cause misunderstanding by the user, e.g., launching the camera interface. As multiple Widgets may be displayed on the same interface, if these Widgets directly call the API to open the interface concurrently, it will cause the user to misunderstand.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               会抢占用户注意力，造成用户错误认知的 API，例如打开拍照界面等，由于多个 Widget 可能会同时显示在一个界面上，如果多个 Widget 均直接调用打开界面的 API，会造成用户理解上的错误。
@@ -432,15 +432,15 @@
           </li>
         </ol>
 
-        <p its-locale-filter-list="en" lang="en">The User agent should provide some new APIs suitable for the Widget, for example:</p>
+        <p its-locale-filter-list="en" lang="en">The user agent should provide some new APIs suitable for the Widget, for example:</p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">User agent 会提供一些适用于 Widget 的新 API，例如：</p>
         <ol>
           <li>
-            <p its-locale-filter-list="en" lang="en">API to obtain the current window size (viewport width)</p>
+            <p its-locale-filter-list="en" lang="en">API to obtain the current window size (viewport width).</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">获取当前窗口大小的 API（视口宽度）</p>
           </li>
           <li>
-            <p its-locale-filter-list="en" lang="en">API to obtain the current user agent information, to enable the Widget to adapt to the specific user agent</p>
+            <p its-locale-filter-list="en" lang="en">API to obtain the current user agent information, to enable the Widget to adapt to the specific user agent.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">获取当前 user agent 信息的 API，以支持 Widget 针对特定的 user agent 进行适配
             </p>
           </li>
@@ -449,7 +449,7 @@
             <p its-locale-filter-list="zh-hans" lang="zh-hans">批量预授权的 API，由于 user agent 上可能同时存在多个 MiniApp Widget，出现多个动态获取权限的 API 会对用户造成困扰，user agent 应提供批量预授权的 API</p>
           </li>
           <li>
-            <p its-locale-filter-list="en" lang="en">Extended APIs for specific user agents, e.g., request to obtain the latest version of the Widget</p>
+            <p its-locale-filter-list="en" lang="en">Extended APIs for specific user agents, e.g., request to obtain the latest version of the Widget.</p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">特定宿主环境的拓展 API，例如请求获取到最新版本的 Widget</p>
           </li>
         </ol>
