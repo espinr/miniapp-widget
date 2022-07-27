@@ -247,7 +247,7 @@
       <section id="addressing">
         <h2>URI</h2>
         <p its-locale-filter-list="en" lang="en">
-          The MiniApp Widget URI should be consistent with the <a href="https://www.w3.org/TR/miniapp-addressing/">MiniApp Addressing</a> specification, to ensure that:
+          The MiniApp Widget URI should be consistent with the <a href="https://www.w3.org/TR/miniapp-addressing/">MiniApp Addressing</a> specification to ensure that:
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           MiniApp Widget 的 URI 规范应该与 <a href="https://www.w3.org/TR/miniapp-addressing/">MiniApp Addressing</a> 规范保持一致，以确保：
@@ -279,7 +279,7 @@
           <span its-locale-filter-list="zh-hans" lang="zh-hans">包</span>
         </h2>
         <p its-locale-filter-list="en" lang="en">
-          Like MiniApp, the MiniApp Widget is also distributed in the form of a package. After the user agent acquires and verifies a MiniApp package, it will acquire the Widget information contained in the package, and load and display it correctly. The form and specification of the package should be consistent with the <a href="https://www.w3.org/TR/miniapp-packaging/">MiniApp Packaging</a> specification, including but not limited to file organization, compression format, filename extension, digital signature, etc. The user agent should use the same form to verify and install the MiniApp Widget package.
+          Like a MiniApp, a MiniApp Widget is also distributed as a package. After the user agent acquires and verifies a MiniApp package, it will acquire the Widget information contained in the package and load and display it correctly. The form and specification of the package should be consistent with the <a href="https://www.w3.org/TR/miniapp-packaging/">MiniApp Packaging</a> specification, including but not limited to file organization, compression format, filename extension, digital signature, etc. [[MINIAPP-PACKAGING]] The user agent should use the same form to verify and install the MiniApp Widget package.
         </p>
         <p its-locale-filter-list="zh-hans" lang="zh-hans">
           与 MiniApp 保持一致，MiniApp Widget 同样以包的形式分发，User agent 获取到 MiniApp 包并进行校验后，获取包中包含的Widget信息，并正确地加载和显示。包的形式和规范应当与 <a href="https://www.w3.org/TR/miniapp-packaging/">MiniApp Packaging</a> 规范保持一致。包括不限于文件组织形式、压缩格式、文件后缀名、数字签名等。User agent 会以同样的形式对 MiniApp Widget 的包进行校验、安装等过程。
@@ -294,7 +294,7 @@
         <ol>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              A MiniApp package may contain both the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Pages</a> and Widgets. In some cases, MiniApp expects to display a Widget on the user agent, however, when the user clicks the content on the Widget, a MiniApp Page is provided as the landing page with richer content.
+              A MiniApp package may contain both the <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp Pages</a> and Widgets. In some cases, MiniApp expects to display a Widget on the user agent. However, when the user clicks the content on the Widget, a MiniApp Page is provided as the landing page with richer content.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               一个 MiniApp 包中应该可以同时包含 <a data-link-type="dfn" href="https://www.w3.org/TR/miniapp-packaging/#dfn-page">MiniApp 页面</a>和 Widget。在某些情况下，MiniApp 希望能在 user agent 上 显示一个 Widget，并在用户点击Widget上的内容时，提供 MiniApp 页面作为承载更丰富内容的落地页。
@@ -302,7 +302,7 @@
           </li>
           <li>
             <p its-locale-filter-list="en" lang="en">
-              A MiniApp package may contain only Widgets without Pages. Some MiniApp providers just want to provide simplest functions on the Widget to meet the users’ specific needs.
+              A MiniApp package may contain only Widgets without Pages. Some MiniApp providers just want to provide simplified features on the Widget to meet the users’ specific needs.
             </p>
             <p its-locale-filter-list="zh-hans" lang="zh-hans">
               一个 MiniApp 包中应该可以只包含 Widget，不包含 Page。某些 MiniApp 的提供方只希望在 Widget 上提供最简单的功能，以满足用户的特定需求。</p>
